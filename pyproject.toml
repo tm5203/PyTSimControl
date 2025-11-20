@@ -4,7 +4,7 @@ build-backend = 'setuptools.build_meta'
 
 [project]
 name = 'PyTSimControl'
-version = '2025.10dev1'
+version = '2025.11dev2'
 authors = [ { name = 'TAKANO Masaya', email = 'm-takano@magic.nifty.jp' } ]
 license = 'MIT'
 license-files = [ 'LICENSE' ]

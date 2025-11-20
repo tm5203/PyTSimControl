@@ -120,7 +120,7 @@ class App:
         '''
         taskCollectionName = self._Config.TaskGenerator.split('.')
         m = importlib.import_module('.'.join(taskCollectionName[:-1]))
-        self._TaskGenerator = getattr(m, taskCollectionName[-1])()
+        self._TaskGenerator = getattr(m, taskCollectionName[-1])(self._Config.TaskGeneratorArgs)
         self._WaitingTask = asyncio.Queue(self._Config.MaxTasks)
         self._ConcurrentTaskSemaphore = asyncio.Semaphore(self._Config.MaxTasks)
 

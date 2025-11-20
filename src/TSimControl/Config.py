@@ -11,6 +11,7 @@ class Config:
         'Verbose' : ('./Verbose', lambda x: x.capitalize() == 'True', True, False),
         'Daemonize' : ('./Daemonize', lambda x: x.capitalize() == 'True', True, False),
         'TaskGenerator' : ('./TaskGenerator', str, False, 'TaskGenerator.TaskGenerator'),
+        'TaskGeneratorArgs' : ('./TaskGeneratorArgs', str, False, ''),
         'MaxTasks' : ('./MaxTasks', int, False, 3)
         }
 
